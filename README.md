@@ -18,7 +18,7 @@ Basically for any of these, cd into either `base`, `overlays/staging`, or `overl
 kustomize build .|kubectl apply -f -
 ```
 
-`kustomize build` generates kubectl-speak, and then that's applied gg
+`kustomize build` generates kubectl yaml, and then that's applied by kubectl.
 
 You can check if this is running with `kubectl`:
 ```
