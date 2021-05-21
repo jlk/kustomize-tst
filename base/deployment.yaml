@@ -14,6 +14,9 @@ spec:
     spec:
       containers:
       - name: the-container
+        securityContext:
+          allowPrivilegeEscalation: false
+          runAsNonRoot: false
         image: monopole/hello:1
         command: ["/hello",
                   "--port=8080",
